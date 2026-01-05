@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card container */
+.container {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 14px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Subtitle */
+.container p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #6b7280;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input */
+input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6366f1;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #6366f1;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+
+.footer span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer span:hover {
+  text-decoration: underline;
+}

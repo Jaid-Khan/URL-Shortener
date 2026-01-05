@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.container {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 14px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  color: #111827;
+}
+
+/* URL box */
+.shortened-url {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f3f4f6;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+/* URL text */
+.shortened-url p {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #111827;
+  word-break: break-all;
+}
+
+/* Button */
+.shortened-url button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.shortened-url button:hover {
+  background: #4f46e5;
+  transform: scale(1.05);
+}
+
+/* Copied state */
+.shortened-url button.copied {
+  background: #22c55e;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  .shortened-url {
+    flex-direction: column;
+  }
+
+  .shortened-url button {
+    width: 100%;
+  }
+}
+
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+
+.footer span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer span:hover {
+  text-decoration: underline;
+}
